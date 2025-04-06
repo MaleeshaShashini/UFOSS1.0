@@ -36,6 +36,8 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
     />
+<!--splash screen styles-->
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -43,7 +45,6 @@
     <!-- Slick Carousel JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
-   
     <script>
       $(document).ready(function () {
         $(".slick-slider").slick({
@@ -74,7 +75,9 @@
     <title>Home</title>
   </head>
 
-  <body>
+  <body >
+    <div id="content">
+          
     <!-- Header -->
     <nav class="navbar navbar-light bg-light">
       <div class="container">
@@ -171,16 +174,16 @@
       <div class="container2">
         <div class="row">
           <div class="content_one col-md-10 col-lg-8 mx-auto">
-            <figure class="text-center" style="margin-top: 30px;">
+            <figure class="text-center" style="margin-top: 30px">
               <blockquote class="blockquote">
                 <h3>Welcome to Ufoss Software!</h3>
               </blockquote>
-              <figcaption class="blockquote-footer" >
+              <figcaption class="blockquote-footer">
                 AIDING PROGRESS THROUGH CODE.
               </figcaption>
             </figure>
             <div>
-              <p class="lead" >
+              <p class="lead">
                 At Ufoss Software, we specialize in delivering innovative,
                 custom software solutions that drive business success. Our team
                 of experienced developers, designers, and strategists are
@@ -202,7 +205,8 @@
 
     <div>
       <div class="impact-container" data-aos="zoom-in-right">
-        <h5
+        <div class="row">
+          <h5
           style="
             font-size: 35px;
             font-weight: 700;
@@ -210,52 +214,64 @@
           "
           class="textstyle1"
         >
-          Empowering<br />
-          Excellence
+          Empowering Excellence
         </h5>
-        <div class="impact-item">
-          <div class="circle orange">
-            <span class="stat-number">1+</span>
+          <div class="col-md-1">
+           
           </div>
-          <div class="description">
-            Years of Experience<br />In Software Industry
+          <div class="col-md-2">
+            <div class="impact-item">
+              <div class="circle orange">
+                <span class="stat-number">1+</span>
+              </div>
+              <div class="description">
+                Years of Experience<br />In Software Industry
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-md-2">
+            <div class="impact-item" data-aos="zoom-in-right">
+              <div class="circle blue">
+                <span class="stat-number">1+</span>
+              </div>
+              <div class="description">
+                Years of the Longest<br />Project Engagements
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="impact-item" data-aos="zoom-in-right">
+              <div class="circle yellow">
+                <span class="stat-number">10+</span>
+              </div>
+              <div class="description">
+                Industry<br />
+                Professional
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="impact-item" data-aos="zoom-in-right">
+              <div class="circle red">
+                <span class="stat-number">5+</span>
+              </div>
+              <div class="description">
+                Project<br />
+                Engagements
+              </div>
+            </div>
+          </div>
 
-        <div class="impact-item" data-aos="zoom-in-right">
-          <div class="circle blue">
-            <span class="stat-number">1+</span>
+          <div class="col-md-2">
+            <div class="impact-item" data-aos="zoom-in-right">
+              <div class="circle green">
+                <span class="stat-number">2+</span>
+              </div>
+              <div class="description">
+                National Level<br />Software Solutions
+              </div>
+            </div>
           </div>
-          <div class="description">
-            Years of the Longest<br />Project Engagements
-          </div>
-        </div>
-
-        <div class="impact-item" data-aos="zoom-in-right">
-          <div class="circle yellow">
-            <span class="stat-number">10+</span>
-          </div>
-          <div class="description">
-            Industry<br />
-            Professional
-          </div>
-        </div>
-
-        <div class="impact-item" data-aos="zoom-in-right">
-          <div class="circle red">
-            <span class="stat-number">5+</span>
-          </div>
-          <div class="description">
-            Project<br />
-            Engagements
-          </div>
-        </div>
-
-        <div class="impact-item" data-aos="zoom-in-right">
-          <div class="circle green">
-            <span class="stat-number">2+</span>
-          </div>
-          <div class="description">National Level<br />Software Solutions</div>
         </div>
       </div>
     </div>
@@ -265,19 +281,19 @@
       data-aos="zoom-in-right"
       style="background-color: #d3ddda"
     >
-    <a href="services.html"style="text-decoration: none;">
-      <h2
-      style="
-        text-align: center;
-        font-size: 35px;
-        font-weight: 700;
-        font-family: 'Times New Roman', Times, serif;
-      "
-      class="textstyle1"
-    >
-      Our Services
-    </h2>
-    </a>
+      <a href="services.html" style="text-decoration: none">
+        <h2
+          style="
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+          "
+          class="textstyle1"
+        >
+          Our Services
+        </h2>
+      </a>
       <br />
       <div class="class1">
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -342,127 +358,201 @@
     </div>
 
     <!--slick-carousel-->
-    <section id="slick-carousel" class="py-5" data-aos="zoom-in-right" style="background-color: #f3f7f5;">
+    <section
+      id="slick-carousel"
+      class="py-5"
+      data-aos="zoom-in-right"
+      style="background-color: #f3f7f5"
+    >
       <div class="container">
-        <a href="technologies.html"style="text-decoration: none;"><h2 class="textstyle1 mb-4" >Technologies We Use</h2></a>
-        
+        <a href="technologies.html" style="text-decoration: none"
+          ><h2 class="textstyle1 mb-4">Technologies We Use</h2></a
+        >
+
         <div class="slick-slider">
           <div>
-            <img src="icons/Python.svg.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/Python.svg.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/jquary.webp" alt="Image 2" class="img-fluid" height="20"/>
+            <img
+              src="icons/jquary.webp"
+              alt="Image 2"
+              class="img-fluid"
+              height="20"
+            />
           </div>
           <div>
-            <img src="icons/backend-java-optimized.png "alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/backend-java-optimized.png "
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/mysql-com-icon.avif" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/mysql-com-icon.avif"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/Node.js_logo.svg.png" alt="Image 2" class="img-fluid" height="500[]"/>
+            <img
+              src="icons/Node.js_logo.svg.png"
+              alt="Image 2"
+              class="img-fluid"
+              height="500[]"
+            />
           </div>
-          
+
           <div>
-            <img src="icons/html.png" alt="Image 2" class="img-fluid"/>
-          </div>
-          <div>
-            <img src="icons/React-icon.svg.png" alt="Image 2" class="img-fluid"/>
-          </div>
-               
-          
-          <div>
-            <img src="icons/vue.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/html.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/php.png" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/React-icon.svg.png"
+              alt="Image 2"
+              class="img-fluid"
+            />
+          </div>
+
+          <div>
+            <img src="icons/vue.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/androidpng.parspng.com_-300x300.webp" alt="Image 2" class="img-fluid"/>
+            <img src="icons/php.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/ios-large.png" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/androidpng.parspng.com_-300x300.webp"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/wordpreespng.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/ios-large.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/C-Sharp-Tutorials.webp" alt="Image 2" class="img-fluid"/>
+            <img src="icons/wordpreespng.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/microsoft-sql_server.png" alt="Image 2" class="img-fluid"/>
-          </div>
-          
-          <div>
-            <img src="icons/CSS3_logo_and_wordmark.svg.png" alt="Image 2" class="img-fluid"/>
-          </div>
-          <div>
-            <img src="icons/boostrap.png" alt="Image 2" class="img-fluid"/>
-          </div>
-         
-          <div>
-            <img src="icons/javascript.png" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/C-Sharp-Tutorials.webp"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/vscode-logo.png" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/microsoft-sql_server.png"
+              alt="Image 2"
+              class="img-fluid"
+            />
+          </div>
+
+          <div>
+            <img
+              src="icons/CSS3_logo_and_wordmark.svg.png"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/logo-og.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/boostrap.png" alt="Image 2" class="img-fluid" />
+          </div>
+
+          <div>
+            <img src="icons/javascript.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/figma_logo_icon_171159.webp" alt="Image 2" class="img-fluid"/>
-          </div>
-         
-          <div>
-            <img src="icons/Adobe_XD_CC_icon.svg.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/vscode-logo.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/balsamiq.png" alt="Image 2" class="img-fluid"/>
+            <img src="icons/logo-og.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/Photoshop-Logo.png" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/figma_logo_icon_171159.webp"
+              alt="Image 2"
+              class="img-fluid"
+            />
+          </div>
+
+          <div>
+            <img
+              src="icons/Adobe_XD_CC_icon.svg.png"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
           <div>
-            <img src="icons/visual_studio_purple.webp" alt="Image 2" class="img-fluid"/>
+            <img src="icons/balsamiq.png" alt="Image 2" class="img-fluid" />
           </div>
           <div>
-            <img src="icons/free-microsoft-dot-net-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-iconmicro.nets-1175179.webp" alt="Image 2" class="img-fluid"/>
+            <img
+              src="icons/Photoshop-Logo.png"
+              alt="Image 2"
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <img
+              src="icons/visual_studio_purple.webp"
+              alt="Image 2"
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <img
+              src="icons/free-microsoft-dot-net-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-iconmicro.nets-1175179.webp"
+              alt="Image 2"
+              class="img-fluid"
+            />
           </div>
         </div>
-        
       </div>
-   
     </section>
 
-    <!--footer-->
-    <footer style="margin-top: 25px;">
+    <footer>
       <div class="footertwo">
         <div class="row">
           <div class="col-6 col-md-2 mb-2">
             <h5>Company</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="index.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="index.html"
+                  class="nav-link p-0 text-body-secondary"
                   >Home</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="AboutUs.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="AboutUs.html"
+                  class="nav-link p-0 text-body-secondary"
                   >About</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="services.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="services.html"
+                  class="nav-link p-0 text-body-secondary"
                   >Services</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="products.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="products.html"
+                  class="nav-link p-0 text-body-secondary"
                   >Products</a
                 >
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="solutions.html"
                   class="nav-link p-0 text-body-secondary"
                   >Solutions</a
@@ -470,23 +560,31 @@
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="technologies.html"
                   class="nav-link p-0 text-body-secondary"
                   >Technologies</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="careers.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="careers.html"
+                  class="nav-link p-0 text-body-secondary"
                   >Career</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="events.html" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="events.html"
+                  class="nav-link p-0 text-body-secondary"
                   >Events</a
                 >
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="contactUs.html"
                   class="nav-link p-0 text-body-secondary"
                   >Contact Us</a
@@ -499,27 +597,42 @@
             <h5>Services</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
                   >Web Development</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
                   >Mobile App Development</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
                   >Customized Software</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
                   >UI/UX Design</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+                <a
+                  class="linking"
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
                   >Database Management</a
                 >
               </li>
@@ -531,6 +644,7 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="https://maps.app.goo.gl/LVWxwPiNiZoNcGvU6"
                   class="nav-link p-0 text-body-secondary"
                   ><img
@@ -542,6 +656,7 @@
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="tel:+94787403235"
                   class="nav-link p-0 text-body-secondary"
                   ><img src="icons/call.png" alt="" height="23" />+94 787 403
@@ -550,6 +665,7 @@
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="https://wa.me/94787403235"
                   class="nav-link p-0 text-body-secondary"
                   ><img src="icons/whatsapp.png" alt="" height="23" />+94 787
@@ -558,6 +674,7 @@
               </li>
               <li class="nav-item mb-2">
                 <a
+                  class="linking"
                   href="mailto:ufosesoftware@gmail.com"
                   class="nav-link p-0 text-body-secondary"
                   ><img
@@ -640,15 +757,12 @@
         </div>
       </div>
     </footer>
-
     <!-- Optional JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
- <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -656,5 +770,7 @@
     <script>
       AOS.init();
     </script>
+    
+    </div>
   </body>
 </html>
